@@ -6,12 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "prod": "pm2 index.js",
+    "kill": "pm2 delete my-app"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.2",
+    "pm2": "^6.0.5",
     "postgres": "^3.4.5"
   },
   "devDependencies": {
